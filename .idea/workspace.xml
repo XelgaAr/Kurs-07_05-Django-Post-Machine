@@ -34,7 +34,13 @@
     "Django Server.post_macines_admin.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "A:/PythonKurs_07_05/post_macines_admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,11 +103,26 @@
       <option name="presentableId" value="Default" />
       <updated>1719918943577</updated>
       <workItem from="1719918946562" duration="7067000" />
-      <workItem from="1720256746226" duration="1495000" />
+      <workItem from="1720256746226" duration="1804000" />
+      <workItem from="1720258571878" duration="24000" />
+      <workItem from="1720437008063" duration="7412000" />
     </task>
+    <task id="LOCAL-00001" summary="Dz_15">
+      <option name="closed" value="true" />
+      <created>1720258487207</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720258487208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dz_15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dz_15" />
   </component>
 </project>
