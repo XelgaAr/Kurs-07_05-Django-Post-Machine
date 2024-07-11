@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Post Machine: {{one_post_machine.city }} {{one_post_machine.address }} <br>
+<br>
+{% for locker in lockers %}
+    size: {{ locker.size }} <br>
+    status: {{ locker.status}} <br>
+    
+    <br>
+    -----------
+    <br>
+{% endfor %}
+
+</body>
+</html>

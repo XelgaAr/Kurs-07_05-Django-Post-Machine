@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for post_machine in post_machines %}
+    <a href="/post_machine/{{ post_machine.pk }}/"> Post Machine {{ post_machine.pk }} </a>
+    <br>
+    {{ post_machine.city }} {{ post_machine.address }}
+    <br>
+
+
+    <br>
+{% endfor %}
+
+</body>
+</html>
+
+
+
+
