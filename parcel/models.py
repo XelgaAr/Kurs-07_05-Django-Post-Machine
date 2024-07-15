@@ -18,3 +18,26 @@ class Parcel(models.Model):
         pass
     def __repr__(self):
         pass
+
+    def to_client(self):
+        return {
+            'recipient': self.recipient,
+            'sender': self.sender,
+            'size': self.size,
+            'post_machine_recipient': self.post_machine_recipient,
+            'order_datetime': self.order_datetime,
+            'open_datetime': self.open_datetime,
+            'update_datetime': self.update_datetime,
+            'status': self.status
+        }
+
+    def form_client(self, data):
+        self.recipient = data['recipient']
+        self.sender = data['sender']
+        self.size = data['size']
+        self.post_machine_recipient = data['post_machine_recipient']
+        self.order_datetime = data['order_datetime']
+        self.open_datetime = data['open_datetime']
+        self.update_datetime = data['update_datetime']
+        self.status = data['status']
+

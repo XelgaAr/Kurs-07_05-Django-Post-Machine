@@ -1,5 +1,6 @@
 from django.urls import path
 
+import parcel.views
 import post_machine.views
 
 urlpatterns = [
