@@ -15,3 +15,9 @@ class Locker(models.Model):
     size = models.IntegerField()
     post_machine = models.ForeignKey(PostMachine, on_delete=models.CASCADE)
     status = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"SIZE : {self.size} - PM {self.post_machine} - {self.status}"
+
+    def __repr__(self):
+        return f"SIZE : {self.size} - PM {self.post_machine} - {self.status}"

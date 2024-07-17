@@ -8,7 +8,17 @@
 {% for parcel in parcels %}
     <a href="/parcel/{{ parcel.pk }}/"> Parcel {{ parcel.pk }} </a>
     sender: {{ parcel.sender }} <br>
-    status: {{ parcel.status }} <br>
+    status:
+    {% if parcel.status == True %}
+        parcel is delivered
+    {%  else %}
+        {%  if parcel.locker is not None %}
+            parcel is waiting for you
+        {% else %}    
+        parcel is on the road
+        {% endif %}
+    {% endif %}
+    <br>
     post_machine: {{ parcel.post_machine_recipient.city }} {{ parcel.post_machine_recipient.address }}
     <br>
     -----------
