@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import HttpResponse, redirect, render
 
 from user.forms import LoginForm, RegisterForm
-
+from parcel import models
 
 # Create your views here.
 def user_page(request):
@@ -55,4 +55,6 @@ def register_view(request):
 
 @login_required
 def user_page(request):
-    return render( request, 'user_page.html', context={"username": request.user.username, "email": request.user.email})
+    user = request.user
+    parcels = models.Parcel.objects.filter(recipient=user)
+    return render( request, 'user_page.html', context={"username": request.user.username, "email": request.user.email,'parcels': parcels})
