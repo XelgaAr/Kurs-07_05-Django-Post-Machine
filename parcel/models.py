@@ -22,6 +22,10 @@ class Parcel(models.Model):
     status = models.BooleanField(
         default=False)  # True- Delivered, false- not delivered (on delivery fill "open_datetime")
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(args, kwargs)
+        self.post_machine_locker = None
+
     def __str__(self):
         return f" {self.pk} - {self.sender} - {self.recipient}"
 
